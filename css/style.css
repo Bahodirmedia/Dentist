@@ -28,7 +28,7 @@ body {
   font-weight: 700;
 }
 
-.header__top .container{
+.header__top .container {
   padding: 33px 0 29px;
   display: flex;
   justify-content: space-between;
@@ -89,7 +89,7 @@ body {
   text-transform: uppercase;
 }
 
-.header__nav .container{
+.header__nav .container {
   padding: 33px 0 34px;
   display: flex;
   justify-content: space-between;
@@ -639,8 +639,8 @@ body {
 
 
 .gallery__title {
-color: #fff;
-margin-bottom: 38px;
+  color: #fff;
+  margin-bottom: 38px;
 }
 
 .gallery__subtitle {
@@ -648,7 +648,7 @@ margin-bottom: 38px;
   margin-bottom: 53px;
 }
 
-.gallery__row{
+.gallery__row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -666,11 +666,11 @@ margin-bottom: 38px;
   padding: 150px 0 120px;
 }
 
-.team__title{
+.team__title {
   margin-bottom: 48px;
 }
 
-.team__subtitle{
+.team__subtitle {
   margin-bottom: 80px;
 }
 
@@ -757,15 +757,15 @@ margin-bottom: 38px;
   display: flex;
 }
 
-.footer__column:first-child{
+.footer__column:first-child {
   flex: 1 0 362px;
 }
 
-.footer__column:nth-child(2){
+.footer__column:nth-child(2) {
   flex: 1 0 270px;
 }
 
-.footer__column:nth-child(3){
+.footer__column:nth-child(3) {
   flex: 1 0 320px;
 }
 
@@ -802,7 +802,7 @@ margin-bottom: 38px;
 
 .touch__links li {
   margin-right: 25px;
-  
+
 }
 
 .touch__links li:last-child {
@@ -834,12 +834,12 @@ margin-bottom: 38px;
   font-size: 16px;
 }
 
-.quick__links a:hover{
+.quick__links a:hover {
   color: #fff;
 }
 
 .form__input,
-.form__text{
+.form__text {
   width: 100%;
   background: none;
   border: none;
@@ -850,23 +850,23 @@ margin-bottom: 38px;
   color: #8d8d8d;
 }
 
-.form__input:first-child{
+.form__input:first-child {
   padding-top: 0;
 }
 
-.form__text{
+.form__text {
   padding-bottom: 75px;
   resize: none;
   margin-bottom: 23px;
 }
 
 
-.form__btn{
+.form__btn {
   border: none;
   padding: 13px 35px 11px;
 }
 
-.copy{
+.copy {
   padding: 45px 0;
   text-align: center;
   background: #1a1a1a;
@@ -880,11 +880,11 @@ margin-bottom: 38px;
   line-height: 30px;
 }
 
-.copy__text a:hover{
+.copy__text a:hover {
   color: #fff;
 }
 
-.totop{
+.totop {
   width: 45px;
   height: 45px;
   background-color: #0087be;
@@ -900,6 +900,6 @@ margin-bottom: 38px;
   z-index: 98;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
