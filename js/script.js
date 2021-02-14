@@ -11,11 +11,9 @@ hamburger.addEventListener("click", function () {
   hamburger.classList.toggle("is-active");
   headerMenu.classList.toggle("active");
   // Do something else, like open/close menu
-  
   if (hamburger.classList.contains('is-active')) {
     headerNav.classList.add('fixed');
   }
-  
 });
 
 
@@ -25,28 +23,28 @@ window.onscroll = function () {
   if (headerHeight > prevScroll) {
     if (hamburger.classList.contains('is-active')) {
       headerNav.classList.add('fixed');
-    } else{
+    } else {
       headerNav.classList.remove('fixed');
       toTop.style.display = 'none';
     }
-    
-   
-  } else if(headerHeight < currentScroll) {
+  } else if (headerHeight < currentScroll) {
     headerNav.classList.add('fixed');
     headerNav.style.top = "0";
     toTop.style.display = 'inline-flex';
-  } 
+  }
   prevScroll = currentScroll
 }
-
 toTop.addEventListener('click', function () {
   document.documentElement.scrollTop = 0;
 })
 
 
 const accordionItemHeaders = document.querySelectorAll(".accordion__title");
-
-accordionItemHeaders.forEach(accordionItemHeader => {
+accordionItemHeaders.forEach(function (accordionItemHeader, index ) {  
+  if (index === 0) {
+    accordionItemHeader.classList.add("active");
+    accordionItemHeader.nextElementSibling.style.maxHeight = accordionItemHeader.nextElementSibling.scrollHeight + "px";
+  } 
   accordionItemHeader.addEventListener("click", event => {
     const currentlyActiveAccordionItemHeader = document.querySelector(".accordion__title.active");
     if (currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader !== accordionItemHeader) {
@@ -60,6 +58,5 @@ accordionItemHeaders.forEach(accordionItemHeader => {
     } else {
       accordionItemBody.style.maxHeight = 0;
     }
-
   });
 });
